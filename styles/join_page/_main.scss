@@ -1,0 +1,110 @@
+main {
+  background: #f1f1f1;
+  padding-bottom: 20px;
+  @media (min-width: 400px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form {
+  background: #ffffff;
+  box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+  margin: 15px;
+  padding: 20px;
+  display: grid;
+  gap: 1em;
+  max-width: 1180px;
+  width: 90%;
+  @media (min-width: 750px) {
+    margin-bottom: 80px;
+    grid-template-columns: 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr 1fr 4fr 0.5fr;
+  }
+  @media (min-width: 1200px) {
+    padding: 50px;
+    row-gap: 2em;
+  }
+  .message {
+    @media (min-width: 750px) {
+      grid-column: span 3;
+    }
+  }
+  .button {
+    width: 128px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid #2c4f80;
+    color: #2c4f80;
+    background: #ffffff;
+    justify-self: center;
+    margin-top: 30px;
+    @media (min-width: 750px) {
+      grid-column: span 3;
+    }
+  }
+
+  .input {
+    border-radius: 5px;
+    border: 1px solid #2c4f80;
+    display: block;
+    width: 100%;
+    height: 70%;
+    max-height: 40px;
+    margin-top: 8px;
+    @media (min-width: 800px) {
+      max-width: 370px;
+      min-height: 39px;
+    }
+  }
+
+  label {
+    font-size: 14px;
+    color: #2c4f80;
+    font-weight: bold;
+    @media (min-width: 1000px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #2c4f80;
+    margin-top: 8px;
+  }
+
+  .birth {
+    @media (min-width: 1000px) {
+      max-width: 207px;
+    }
+  }
+}
+
+h2 {
+  color: #e32700;
+  margin: 0;
+  text-align: center;
+  padding: 50px 20px 20px 20px;
+  @media (min-width: 800px) {
+    margin-top: 100px;
+    font-size: 36px;
+    font-weight: 800;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0;
+  padding: 0 40px 30px 40px;
+  color: #2c4f80;
+  text-align: center;
+  @media (min-width: 800px) {
+    margin-bottom: 80px;
+    font-size: 24px;
+    max-width: 590px;
+  }
+}

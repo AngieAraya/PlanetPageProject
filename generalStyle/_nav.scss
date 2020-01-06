@@ -1,0 +1,45 @@
+.nav {
+  background: #061b38;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+  @media (min-width: 550px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  &__link {
+    color: white;
+    text-decoration-line: none;
+    font-size: 14px;
+    font-weight: bold;
+    @media (min-width: 550px) {
+      margin: 20px;
+    }
+  }
+}
+
+.active {
+  border-bottom: 2px solid red;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+
+  img {
+    width: 78px;
+    height: 45px;
+    object-fit: cover;
+    justify-content: center;
+  }
+}

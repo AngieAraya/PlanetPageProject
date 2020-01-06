@@ -1,0 +1,69 @@
+.header {
+ background-image: linear-gradient(to bottom, #c155557d, #240202af), url("../../img/page3/hero-3.jpg");
+ @include displayflexCenter();
+ @include backgroundImgFit();
+  overflow: hidden;
+  position: relative;
+  @media (min-width: 700px) {
+    height: 100vh;
+  }
+
+  &__text {
+    z-index: 20;
+    padding-top: 16vh;
+    @media (min-width: 700px) {
+      margin-left: 6vw;
+      padding-right: 36vw;
+      padding-top: 45vh;
+    }
+    @media (min-width: 1000px) {
+      padding-right: 55vw;
+    }
+
+    h1 {
+      @extend %general-h1;
+      @media (min-width: 600px) {
+        margin-bottom: 25px;
+        font-size: 60px;
+      }
+    }
+    h2 {
+      @extend %general-h2;
+      padding: 0;
+      text-align: left;
+      @media (min-width: 600px) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &::before,
+   &::after {
+    content: "";
+    background: #17498b;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: ellipse(112.34% 102.62% at 28.45% 142%);
+    z-index: 1;
+    order: 2;
+    transition: all 1000ms ease-in ;  
+    @media (min-width: 700px) {
+      clip-path: ellipse(83.34% 92.62% at 24.45% 139.46%);
+    }
+  }
+
+  &::after {
+    content: "";
+    background: linear-gradient(to bottom, rgba(21, 52, 98, 0.932) 60%, #00132c);
+    clip-path: ellipse(110.34% 100.62% at 28.45% 142%);
+    transition: all 1000ms ease-in ;  
+    @media (min-width: 700px) {
+      clip-path: ellipse(81.34% 93.62% at 25.45% 142%);
+    }
+  }
+}
+
+
+
+
